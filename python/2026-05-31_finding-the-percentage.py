@@ -1,3 +1,9 @@
+# Problem : Finding The Percentage
+# Topic   : hash-map
+# Difficulty: easy
+# Date    : 2026-05-31
+# Source  : HackerRank
+
 if __name__ == "__main__":
     n = int(input())
     student_marks = {}
