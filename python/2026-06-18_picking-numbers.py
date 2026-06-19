@@ -3,7 +3,6 @@
 # Difficulty: easy
 # Date      : 2026-06-18
 # Source    : HackerRank
-# Status    : INCOMPLETE — revisit later
 
 #!/bin/python3
 
@@ -28,13 +27,16 @@ def pickingNumbers(a):
     frekuensi = Counter(a)
 
     maks_panjang = 0
-
+    print(frekuensi)
     # 2. Iterasi untuk setiap angka yang unik
+    sementara = 0
     for angka in frekuensi:
-        print(angka)
+        if sementara < frekuensi[angka] + frekuensi[angka + 1]:
+            sementara = frekuensi[angka] + frekuensi[angka + 1]
+        print(frekuensi[angka] + frekuensi[angka + 1])
         pass
 
-    return maks_panjang
+    return sementara
 
 
 if __name__ == "__main__":
